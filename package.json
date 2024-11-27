@@ -1,4 +1,14 @@
 {
   "name": "dsmcar",
-  "packageManager": "yarn@4.5.1"
+  "type": "module",
+  "main": "src",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "packageManager": "yarn@4.5.1",
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.6.3"
+  }
 }
