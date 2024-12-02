@@ -6,15 +6,12 @@ import eslintPluginPrettier from 'eslint-plugin-prettier/recommended';
 /** @type {import('eslint').Linter.Config[]} */
 export default [
   {
-    files: ['src/**/*.{js,ts}'],
+    files: ['src/**/*.{ts}'],
   },
   { languageOptions: { sourceType: 'module', globals: globals.node } },
   {
     rules: {
-      'no-undef': 'error',
       'prettier/prettier': ['error', { singleQuote: true }],
-      'no-unused-vars':
-        process.env.NODE_ENV === 'production' ? 'error' : 'warn',
       'no-use-before-define': ['error', { functions: false }],
     },
   },
