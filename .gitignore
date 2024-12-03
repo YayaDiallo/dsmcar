@@ -14,3 +14,7 @@
 
 #/* Transpiled */
 dist
+
+#/* Secrets */
+.env
+.env.*
