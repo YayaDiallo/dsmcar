@@ -1,11 +1,12 @@
 {
   "name": "dsmcar",
   "type": "module",
-  "main": "src",
+  "main": "index.js",
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "lint": "eslint"
   },
   "packageManager": "yarn@4.5.1",
   "devDependencies": {
